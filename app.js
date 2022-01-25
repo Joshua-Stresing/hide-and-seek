@@ -42,14 +42,13 @@ function handleGuess(correctSpot, userGuess) {
     shedContainer.classList.remove('face');
     treeContainer.classList.remove('face');
     boulderContainer.classList.remove('face');
+    totalGuesses++;
     const correctHidingPlaceEl = document.getElementById(`${correctSpot}-container`);
-    
     correctHidingPlaceEl.classList.add('face');
     
     // then increment the guesses
-    if (userGuess === correctSpot){
+    if (correctSpot === userGuess){
         correctGuesses++;
-        totalGuesses++;
     }
     totalEl.textContent = totalGuesses;
     winsEl.textContent = correctGuesses;
