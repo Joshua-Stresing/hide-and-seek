@@ -37,7 +37,7 @@ boulderButton.addEventListener('click', () => {
 
 
 
-function handleGuess(userGuess, correctSpot) {
+function handleGuess(correctSpot, userGuess) {
     // reset the styles
     shedContainer.classList.remove('face');
     treeContainer.classList.remove('face');
